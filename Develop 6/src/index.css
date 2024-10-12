@@ -118,3 +118,115 @@ tbody tr:nth-child(odd) {
   width: 80vw;
   table-layout: fixed;
 }
+/* General Styles */
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+/* Candidate Card Styles */
+.candidate-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.candidate-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.candidate-container p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.candidate-container .button-group {
+  margin-top: 1rem;
+}
+
+/* Buttons */
+.button-group button {
+  width: 50px;
+  height: 50px;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.button-group button:active {
+  transform: scale(0.95);
+}
+
+.button-group .save-button {
+  background-color: #28a745; /* Green */
+}
+
+.button-group .skip-button {
+  background-color: #dc3545; /* Red */
+}
+
+/* Table for Saved Candidates */
+.saved-candidates-container {
+  width: 80%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.saved-candidates-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.saved-candidates-container th,
+.saved-candidates-container td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #444444;
+}
+
+.saved-candidates-container th {
+  background-color: #1f2a40;
+}
+
+.saved-candidates-container tr:hover {
+  background-color: #333333;
+}
+
+.candidate-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Reject Button */
+.reject-button {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.reject-button:active {
+  transform: scale(0.9);
+}
